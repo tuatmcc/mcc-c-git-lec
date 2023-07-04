@@ -23,12 +23,12 @@ repository
 - local repository
 - remote repository
 clone
-commit
-push
-pull
 branch
 - local branch
 - remote branch
+commit
+push
+pull
 marge
 Github
 ```
@@ -41,7 +41,7 @@ Github
 
 ## clone (クローン)
 
-クローンとは、リモートリポジトリをローカル環境に複製することです。複製してローカル環境にできたリポジトリをローカルリポジトリと呼びます。リモートにあったファイルやディレクトリだけでなく、Gitのデータも複製されます。
+クローンとは、リモートリポジトリをローカル環境に複製することです。複製してローカル環境にできたリポジトリをローカルリポジトリと呼びます。リモートのmainブランチにあったファイルやディレクトリと、Gitのデータも複製されます。
 
 たぶん、VScode の Git の拡張機能のインストールが終わったと思います。このリポジトリをクローンしてみましょう。
 
@@ -52,3 +52,11 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 コマンドパレットに`> git clone` と入力し、`git クローン`を選択。 github から複製を選ぶ。Github にログインしていない場合はログインする。権限はすべて許可してください。
 
 ![gir clone](./markDownResource/clone1.png)
+
+`tuatmcc/mcc-c-git-lec`を選択してください。
+
+![select repository](./markDownResource/selectrepo.png)
+
+クローンする場所は好きな場所にクローンしてください。クローンしたら開いてください。
+
+`README.md` を開いてください。この資料が見れると思います。

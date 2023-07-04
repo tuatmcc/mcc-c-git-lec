@@ -6,6 +6,8 @@
 
 vscode の拡張昨日から検索欄に`git`と入れ、 Git Graph 、 Git History 、 GitLens の3つをインストールしてください。
 
+git graph はいらない？
+
 ![git検索](./markDownResource/git1.png)
 
 インストールしている間に Git の概要を話したいと思います。

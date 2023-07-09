@@ -165,4 +165,12 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 * マージする
 
+`branch-practice` ブランチにチェックアウトしてください。自分の名前のブランチではアリません。
 
+![margecheckout](./markDownResource/margecheckout.png)
+
+チェックアウトしたら、自分のブランチを
+
+![domarge](./markDownResource/domarge.png)
+
+![marged](./markDownResource/marged.png)

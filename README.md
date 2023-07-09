@@ -180,6 +180,10 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![marged](./markDownResource/marged.png)
 
+また、`branch-practice` を開いている状態で、自分の書いたテキストファイルがあるか確認してください。
+
+![merged2](./markDownResource/merged2.png)
+
 * フェッチする
 
 

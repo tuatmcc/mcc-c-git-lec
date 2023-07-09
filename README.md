@@ -198,13 +198,18 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 * フェッチする
 
-Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。
+リモートでの変更の履歴 (みんなのpush) を取得します。Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。
 
 ![fetch](./markDownResource/fetch.png)
-
-* プルする
 
 フェッチ後の画像が無い！！！
 
 とりあえず Git Graph 見るとみんなのやつがいっぱい乗ってるハズ、、、
 
+* プルする
+
+現在、リモートの変更の履歴をフェッチで取得しました。リモートの変更で変わったファイルをローカルのファイルに反映させます。ソース管理のとこにある `変更の同期` もしくは 左下のブランチ名をクリックしてください。
+
+![pull1](./markDownResource/pull1.png)
+
+![pull2](./markDownResource/pull2.png)

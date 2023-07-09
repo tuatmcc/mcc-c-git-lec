@@ -104,6 +104,14 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ## commit, branch, checkout, merge, pull, push を試してみよう
 
-まず初めに `branch-practice` ブランチにチェックアウト(ブランチの切り替え)をします。 Git Graph から、`branch-practice` をダブルクリックして下さい。それで、`branch-practice` ブランチにチェックアウトできます。
+現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。
+
+![checkout](./markDownResource/checkout2.png)
+
+`branch-practice` ブランチにチェックアウト (ブランチの切り替え) をします。 Git Graph から、`branch-practice` をダブルクリックして下さい。それで、`branch-practice` ブランチにチェックアウトできます。
 
 ![checkout](./markDownResource/checkout1.png)
+
+チェックアウト後は `branch-practice` になっているはずです。確認してください。
+
+![checkout](./markDownResource/checkout3.png)

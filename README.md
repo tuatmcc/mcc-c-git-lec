@@ -202,6 +202,8 @@ Git Graph のタブの右上にある雲のアイコンをクリックしてフ�
 
 ![fetch](./markDownResource/fetch.png)
 
+* プルする
+
 フェッチ後の画像が無い！！！
 
 とりあえず Git Graph 見るとみんなのやつがいっぱい乗ってるハズ、、、

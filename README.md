@@ -32,6 +32,7 @@ pull
 pull request
 fetch
 conflict
+gitingore
 Github
 ```
 
@@ -139,6 +140,8 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 ![create branch](./markDownResource/createbranch3.png)
 
 ![create branch](./markDownResource/createbranch4.png)
+
+先程作成した自分の名前のブランチには `origin` がついていません。これは、自分の名前のブランチはまだリモートに存在しないからです。ローカルブランチしか存在しません。
 
 * コミットする
 

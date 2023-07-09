@@ -104,9 +104,11 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ## commit, branch, checkout, merge, pull, push を試してみよう
 
-現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。
+現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。確認してください。
 
 ![checkout](./markDownResource/checkout2.png)
+
+* `branch-practice` にチェックアウトする
 
 `branch-practice` ブランチにチェックアウト (ブランチの切り替え) をします。 Git Graph から、`branch-practice` をダブルクリックして下さい。それで、`branch-practice` ブランチにチェックアウトできます。
 
@@ -115,3 +117,8 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 チェックアウト後は `branch-practice` になっているはずです。確認してください。
 
 ![checkout](./markDownResource/checkout3.png)
+
+* MY-branch を作成する
+
+MCC の Discord の自分の名前の Branch を作ります。
+

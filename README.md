@@ -129,3 +129,15 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 ブランチ名は MCC の Discord の自分の名前にして、 `Create Branch` してください。
 
 ![create branch](./markDownResource/createbranch.png)
+
+自分の名前のブランチができたらこのようになります。
+
+![create branch](./markDownResource/createbranch2.png)
+
+自分の名前のブランチをダブルクリックして、チェックアウトしてください。チェックアウトしたら、ちゃんと今開いているブランチが自分の名前のブランチか確認してください。
+
+![create branch](./markDownResource/createbranch3.png)
+
+![create branch](./markDownResource/createbranch4.png)
+
+

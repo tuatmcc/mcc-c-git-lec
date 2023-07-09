@@ -29,7 +29,6 @@ checkout
 marge
 push
 pull
-pull request
 fetch
 conflict
 gitingore
@@ -105,7 +104,11 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 プッシュとは、**ローカルリポジトリの変更履歴をリモートリポジトリに反映すること**です。ローカルリポジトリの変更履歴をリモートリポジトリに反映すると、リモートリポジトリの変更履歴にも反映されます。
 
-## commit, branch, checkout, merge, pull, push を試してみよう
+## fetch (フェッチ)
+
+フェッチとは、**リモートリポジトリの変更履歴を取得すること**です。プルとの違いは、フェッチではリモートリポジトリの変更履歴を取得するだけで、ローカルリポジトリの変更履歴には反映されません。
+
+## commit, branch, checkout, merge, pull, push, fetch を試してみよう
 
 現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。確認してください。
 
@@ -169,8 +172,15 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![margecheckout](./markDownResource/margecheckout.png)
 
-チェックアウトしたら、自分のブランチを
+チェックアウトしたら、自分の名前のブランチを `branch-practice` にマージします。自分のブランチを右クリックし、 `Merge into Current Branch` を選択してください。
 
 ![domarge](./markDownResource/domarge.png)
 
+するとマージされ、 `branch-practice` から派生した自分の名前のブランチでコミットされ、 `branch-practice` にマージされる流れになっているか確認してください。
+
 ![marged](./markDownResource/marged.png)
+
+* フェッチする
+
+
+

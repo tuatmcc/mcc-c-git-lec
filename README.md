@@ -86,6 +86,8 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ![sample graph](./markDownResource/sample-graph1.png)
 
+ブランチ名が書いてあるコミットが、ローカルブランチでの最新のコミットです。ブランチ名に origin がついているコミットは、リモートブランチでの最新のコミットです。あとで実際に触れながら詳しく説明します。
+
 ## checkout (チェックアウト)
 
 チェックアウトとは、**作業するブランチを切り替えること**です。ブランチを切り替えると、そのブランチの最新のコミットの状態になります。
@@ -120,5 +122,6 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 * MY-branch を作成する
 
-MCC の Discord の自分の名前の Branch を作ります。
+MCC の Discord の自分の名前の Branch を作ります。 `branch-practice origin` を右クリックし、 `Create Branch` を選択してください。
 
+![create branch](./markDownResource/selectbranch.png)

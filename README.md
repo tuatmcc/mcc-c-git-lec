@@ -120,8 +120,12 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ![checkout](./markDownResource/checkout3.png)
 
-* MY-branch を作成する
+* my-branch を作成する
 
 MCC の Discord の自分の名前の Branch を作ります。 `branch-practice origin` を右クリックし、 `Create Branch` を選択してください。
 
 ![create branch](./markDownResource/selectbranch.png)
+
+ブランチ名は MCC の Discord の自分の名前にして、 `Create Branch` してください。
+
+![create branch](./markDownResource/createbranch.png)

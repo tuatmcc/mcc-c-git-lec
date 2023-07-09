@@ -192,6 +192,10 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![push2](./markDownResource/push2.png)
 
+プッシュしたら `branch-practice origin` が先頭になると思います。
+
+![pushed](./markDownResource/pushed.png)
+
 * フェッチする
 
 Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。
@@ -199,4 +203,6 @@ Git Graph のタブの右上にある雲のアイコンをクリックしてフ�
 ![fetch](./markDownResource/fetch.png)
 
 フェッチ後の画像が無い！！！
+
+とりあえず Git Graph 見るとみんなのやつがいっぱい乗ってるハズ、、、
 

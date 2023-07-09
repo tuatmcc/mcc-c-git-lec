@@ -32,6 +32,7 @@ pull
 pull request
 fetch
 conflict
+gitingore
 Github
 ```
 
@@ -86,6 +87,8 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ![sample graph](./markDownResource/sample-graph1.png)
 
+ブランチ名が書いてあるコミットが、ローカルブランチでの最新のコミットです。ブランチ名に origin がついているコミットは、リモートブランチでの最新のコミットです。あとで実際に触れながら詳しく説明します。
+
 ## checkout (チェックアウト)
 
 チェックアウトとは、**作業するブランチを切り替えること**です。ブランチを切り替えると、そのブランチの最新のコミットの状態になります。
@@ -104,4 +107,70 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ## commit, branch, checkout, merge, pull, push を試してみよう
 
+現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。確認してください。
 
+![checkout](./markDownResource/checkout2.png)
+
+* `branch-practice` にチェックアウトする
+
+`branch-practice` ブランチにチェックアウト (ブランチの切り替え) をします。 Git Graph から、`branch-practice` をダブルクリックして下さい。それで、`branch-practice` ブランチにチェックアウトできます。
+
+![checkout](./markDownResource/checkout1.png)
+
+チェックアウト後は `branch-practice` になっているはずです。確認してください。
+
+![checkout](./markDownResource/checkout3.png)
+
+* my-branch を作成する
+
+MCC の Discord の自分の名前の Branch を作ります。 `branch-practice origin` を右クリックし、 `Create Branch` を選択してください。
+
+![create branch](./markDownResource/selectbranch.png)
+
+ブランチ名は MCC の Discord の自分の名前にして、 `Create Branch` してください。
+
+![create branch](./markDownResource/createbranch.png)
+
+自分の名前のブランチができたらこのようになります。
+
+![create branch](./markDownResource/createbranch2.png)
+
+自分の名前のブランチをダブルクリックして、チェックアウトしてください。チェックアウトしたら、ちゃんと今開いているブランチが自分の名前のブランチか確認してください。
+
+![create branch](./markDownResource/createbranch3.png)
+
+![create branch](./markDownResource/createbranch4.png)
+
+先程作成した自分の名前のブランチには `origin` がついていません。これは、自分の名前のブランチはまだリモートに存在しないからです。ローカルブランチしか存在しません。
+
+* コミットする
+
+自分の名前のブランチにチェックアウトができていたら、 branch-practice ディレクトリの中に `自分の名前.txt` というファイルを作成してください。中身は何でもいいです。
+
+![create mytext](./markDownResource/createmytext.png)
+
+コミットをする前にステージします。ソースの管理から、 `自分の名前.txt` をカーソルを合わせると現れる + を押してステージしてください。
+
+リポジトリ内のファイルを変更してコミットする際、コミットするファイルを選べます。選んだファイルがステージされ、ステージされたファイルのみコミットされます。特定のファイルだけ別のコミットにしたいときや、コミットしたくないファイルがあるときなどにこの機能は役立ちます。
+
+![stage](./markDownResource/stage.png)
+
+ステージしたらメッセージを入力してください。ここではわかりやすく `commit 自分の名前` と入力してください。メッセージを入力したら Ctrl+Enter 、 (MacはたぶんCommand+Enter) もしくは `✓コミット` をクリックしてコミットできます。
+
+![commit](./markDownResource/commit.png)
+
+コミットしたら Git Graph から自分の名前のブランチにコミットが反映されていることを確認してください。また、メッセージも反映できているか確認してください。
+
+![commited](./markDownResource/commited.png)
+
+* マージする
+
+`branch-practice` ブランチにチェックアウトしてください。自分の名前のブランチではアリません。
+
+![margecheckout](./markDownResource/margecheckout.png)
+
+チェックアウトしたら、自分のブランチを
+
+![domarge](./markDownResource/domarge.png)
+
+![marged](./markDownResource/marged.png)

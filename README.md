@@ -31,7 +31,7 @@ push
 pull
 fetch
 conflict
-gitingore
+gitignore
 Github
 ```
 
@@ -225,3 +225,7 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 こんなことが起きたら大問題です。
 
 本来、チーム内で役割分担が正しく行われていれば、同じファイルを他の人に触られることは起きません。このような競合状態を起こさないことがチーム開発では必要です。
+
+## gitignore
+
+

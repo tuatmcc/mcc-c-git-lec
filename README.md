@@ -140,4 +140,26 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![create branch](./markDownResource/createbranch4.png)
 
+* コミットする
+
+自分の名前のブランチにチェックアウトができていたら、 branch-practice ディレクトリの中に `自分の名前.txt` というファイルを作成してください。中身は何でもいいです。
+
+![create mytext](./markDownResource/createmytext.png)
+
+コミットをする前にステージします。ソースの管理から、 `自分の名前.txt` をカーソルを合わせると現れる + を押してステージしてください。
+
+リポジトリ内のファイルを変更してコミットする際、コミットするファイルを選べます。選んだファイルがステージされ、ステージされたファイルのみコミットされます。特定のファイルだけ別のコミットにしたいときや、コミットしたくないファイルがあるときなどにこの機能は役立ちます。
+
+![stage](./markDownResource/stage.png)
+
+ステージしたらメッセージを入力してください。ここではわかりやすく `commit 自分の名前` と入力してください。メッセージを入力したら Ctrl+Enter 、 (MacはたぶんCommand+Enter) もしくは `✓コミット` をクリックしてコミットできます。
+
+![commit](./markDownResource/commit.png)
+
+コミットしたら Git Graph から自分の名前のブランチにコミットが反映されていることを確認してください。また、メッセージも反映できているか確認してください。
+
+![commited](./markDownResource/commited.png)
+
+* マージする
+
 

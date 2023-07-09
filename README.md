@@ -184,7 +184,19 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![merged2](./markDownResource/merged2.png)
 
+* プッシュする
+
+現在、ローカルの `branch-practice` の先頭と リモートの `branch-practice` の先頭は異なっています。ローカルでの変更 (自分のブランチをマージした事) をリモートに反映させるためにプッシュします。ソース管理のとこにある `変更の同期` もしくは 左下のブランチ名をクリックしてください。
+
+![push1](./markDownResource/push1.png)
+
+![push2](./markDownResource/push2.png)
+
 * フェッチする
 
+Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。
 
+![fetch](./markDownResource/fetch.png)
+
+フェッチ後の画像が無い！！！
 

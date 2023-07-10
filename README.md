@@ -180,6 +180,10 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ![nowmain2](./markDownResource/nowmain2.png)
 
+main ブランチでの branch-practice ディレクトリの中身を覚えておいてください。 `HelloGit.txt` だけあると思います。 
+
+![beforecheckout](./markDownResource/beforecheckout.png)
+
 `branch-practice` にチェックアウトします。 `branch-practice` の部分をダブルクリックしてください。 (origin のとこはクリックしない。なんか色々出てくる。)
 
 ![checkout4](./markDownResource/checkout4.png)

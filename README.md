@@ -180,9 +180,15 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 ![nowmain2](./markDownResource/nowmain2.png)
 
-`branch-practice` にチェックアウトします。 `branch-practice` の部分をダブルクリックしてください。
+`branch-practice` にチェックアウトします。 `branch-practice` の部分をダブルクリックしてください。 (origin のとこはクリックしない。なんか色々出てくる。)
 
 ![checkout4](./markDownResource/checkout4.png)
+
+`branch-practice` にチェックアウトしたらちゃんとできたか確認してください。左下か Git Graph を見てください。
+
+![checkout6](./markDownResource/checkout6.png)
+
+![checkout5](./markDownResource/checkout5.png)
 
 ## merge (マージ)
 

@@ -194,6 +194,14 @@ main ブランチでの branch-practice ディレクトリの中身を覚えて�
 
 ![checkout5](./markDownResource/checkout5.png)
 
+また、 `branch-practice` ディレクトリの中身を見てください。 `HelloGit.txt` と main ブランチには無かった `checkout.txt` があると思います。
+
+![aftercheckout](./markDownResource/aftercheckout.png)
+
+確認できたら `main` ブランチにチェックアウトしましょう。
+
+![checkoutmain](./markDownResource/checkoutmain.png)
+
 ## merge (マージ)
 
 マージとは、**ブランチの変更履歴を統合すること**です。ブランチを切り替えるときに、そのブランチの変更履歴を現在のブランチに統合することができます。
@@ -210,9 +218,9 @@ main ブランチでの branch-practice ディレクトリの中身を覚えて�
 
 フェッチとは、**リモートリポジトリの変更履歴を取得すること**です。プルとの違いは、フェッチではリモートリポジトリの変更履歴を取得するだけで、ローカルリポジトリの変更履歴には反映されません。
 
-## commit, branch, checkout, merge, pull, push, fetch を試してみよう
+## commit, create branch, merge, pull, push, fetch を試してみよう
 
-現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。確認してください。
+現在のブランチが `main` ブランチになっているのを確認してください。
 
 ![checkout](./markDownResource/checkout2.png)
 

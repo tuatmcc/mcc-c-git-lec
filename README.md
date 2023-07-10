@@ -172,6 +172,18 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 チェックアウトとは、**作業するブランチを切り替えること**です。ブランチを切り替えると、そのブランチの最新のコミットの状態になります。
 
+試しに `branch-practice` ブランチにチェックアウトしてみましょう。
+
+今皆さんは `main` ブランチにいると思います。 左下を見ると `main` と書いてあります。ここに書いてあるのが現在いるブランチです。また Git Graph を見ると `main` に ○ がついています。
+
+![nowmain](./markDownResource/nowmain.png)
+
+![nowmain2](./markDownResource/nowmain2.png)
+
+`branch-practice` にチェックアウトします。 `branch-practice` の部分をダブルクリックしてください。
+
+![checkout4](./markDownResource/checkout4.png)
+
 ## merge (マージ)
 
 マージとは、**ブランチの変更履歴を統合すること**です。ブランチを切り替えるときに、そのブランチの変更履歴を現在のブランチに統合することができます。

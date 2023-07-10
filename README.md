@@ -29,10 +29,9 @@ checkout
 marge
 push
 pull
-pull request
 fetch
 conflict
-gitingore
+gitignore
 Github
 ```
 
@@ -105,7 +104,11 @@ ctr + p を押してコマンドパレットを表示。(Mac は多分 Command +
 
 プッシュとは、**ローカルリポジトリの変更履歴をリモートリポジトリに反映すること**です。ローカルリポジトリの変更履歴をリモートリポジトリに反映すると、リモートリポジトリの変更履歴にも反映されます。
 
-## commit, branch, checkout, merge, pull, push を試してみよう
+## fetch (フェッチ)
+
+フェッチとは、**リモートリポジトリの変更履歴を取得すること**です。プルとの違いは、フェッチではリモートリポジトリの変更履歴を取得するだけで、ローカルリポジトリの変更履歴には反映されません。
+
+## commit, branch, checkout, merge, pull, push, fetch を試してみよう
 
 現在のブランチは左下で確認できます。現在は `main` ブランチになっているはずです。確認してください。
 
@@ -169,8 +172,68 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![margecheckout](./markDownResource/margecheckout.png)
 
-チェックアウトしたら、自分のブランチを
+チェックアウトしたら、自分の名前のブランチを `branch-practice` にマージします。自分のブランチを右クリックし、 `Merge into Current Branch` を選択してください。
 
 ![domarge](./markDownResource/domarge.png)
 
+するとマージされ、 `branch-practice` から派生した自分の名前のブランチでコミットされ、 `branch-practice` にマージされる流れになっているか確認してください。
+
 ![marged](./markDownResource/marged.png)
+
+また、`branch-practice` を開いている状態で、自分の書いたテキストファイルがあるか確認してください。
+
+![merged2](./markDownResource/merged2.png)
+
+* プッシュする
+
+現在、ローカルの `branch-practice` の先頭と リモートの `branch-practice` の先頭は異なっています。ローカルでの変更 (自分のブランチをマージした事) をリモートに反映させるためにプッシュします。ソース管理のとこにある `変更の同期` もしくは 左下のブランチ名をクリックしてください。
+
+![push1](./markDownResource/push1.png)
+
+![push2](./markDownResource/push2.png)
+
+プッシュしたら `branch-practice origin` が先頭になると思います。
+
+![pushed](./markDownResource/pushed.png)
+
+* フェッチする
+
+リモートでの変更の履歴 (みんなのpush) を取得します。Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。あれれ、自動でフェッチしてくれるのかな？？？
+
+![fetch](./markDownResource/fetch.png)
+
+フェッチ後の画像が無い！！！
+
+とりあえず Git Graph 見るとみんなのやつがいっぱい乗ってるハズ、、、
+
+* プルする
+
+現在、リモートの変更の履歴をフェッチで取得しました。リモートの変更で変わったファイルをローカルのファイルに反映させます。ソース管理のとこにある `変更の同期` もしくは 左下のブランチ名をクリックしてください。
+
+![pull1](./markDownResource/pull1.png)
+
+![pull2](./markDownResource/pull2.png)
+
+ぷるしたら `branch-practice` ディレクトリにみんなの名前のファイルがいっぱいあると思います。画像が無い！！！
+
+とりあえずこんな感じでリポジトリの共同編集ができました。
+
+## Conflict
+
+ある main ブランチのコミットから A さんは a ブランチ、 B さんは b ブランチを作成しました。 A さんはもともとあったファイル Hoge.txt を削除しました。 B さんは Hoge.txt に加筆しました。 A さんは a ブランチを main ブランチにマージし、 B さんも b ブランチを main ブランチにマージしようとしました。 すると削除したはずの Hoge.txt を後から加筆するという訳のわからないことになってしまいます。このような状態をコンフリクト (衝突、競合) と言います。
+
+こんなことが起きたら大問題です。
+
+本来、チーム内で役割分担が正しく行われていれば、同じファイルを他の人に触られることは起きません。このような競合状態を起こさないことがチーム開発では必要です。
+
+## gitignore
+
+gitignore とは、Git で管理しないファイルを指定するためのファイルです。例えば、キャッシュファイルなどは Git で管理する必要がありません。このようなファイルを gitignore に指定することで、Git で管理しないようにできます。
+
+`.gitignore` というファイルで Git で管理しないファイルを指定します。 `.gitignore` には `ignore` と書いてあります。試しに `ignore` というファイルを作成してみましょう。下の画像のようにグレーになり、ソースの管理で `ignore` というファイルがなく、ステージもできないのがわかると思います。
+
+![ignore](/markDownResource/ignore.png)
+
+## Github
+
+ここまでで、 Git の基本的なしくみがわかったと思います。共同編集の際、リモートリポジトリを保管する場所が必要になることがわかります。そこで、リモートリポジトリの管理を行うサービスが Github です。 Git の Hub です。 Github でリモートリポジトリの管理を行って、外部にリポジトリを公開すれば、他の人に簡単にコードを見てもらえます。また、プラグインなどを使えば、Pushすす際に指定したプログラムを実行することができたりします。 MCC のホームページはこの辺の技術をつかって作られています。

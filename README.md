@@ -283,7 +283,7 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![margecheckout](./markDownResource/margecheckout.png)
 
-チェックアウトしたら、自分の名前のブランチを `branch-practice` にマージします。自分のブランチを右クリックし、 `Merge into Current Branch` を選択してください。
+チェックアウトしたら、自分の名前のブランチを `branch-practice` にマージします。自分のブランチを右クリックし、 `Merge into Current Branch` を選択してください。(※ ここでもブランチ名を右クリックすると `Merge into Current Branch` が出てこない。ちょっと右の方の枠外 (赤い枠) あたりを右クリックすると出てくる。)
 
 ![domarge](./markDownResource/domarge.png)
 
@@ -297,19 +297,19 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 * プッシュする
 
-現在、ローカルの `branch-practice` の先頭と リモートの `branch-practice` の先頭は異なっています。ローカルでの変更 (自分のブランチをマージした事) をリモートに反映させるためにプッシュします。ソース管理のとこにある `変更の同期` もしくは 左下のブランチ名をクリックしてください。
+現在、ローカルの `branch-practice` の先頭と リモートの `branch-practice` の先頭は異なっています。これは、今までの作業はローカルで行ったため、リモートリポジトリは、自分の名前のファイルと追加した一連の作業を行ったことをまだ知らないからです。 一連の作業 (自分のブランチを作ってファイル追加してマージした事) をリモートに反映させるためにプッシュします。ソース管理のとこにある `変更の同期` もしくは 左下のブランチ名をクリックしてください。
 
 ![push1](./markDownResource/push1.png)
 
 ![push2](./markDownResource/push2.png)
 
-プッシュしたら `branch-practice origin` が先頭になると思います。
+プッシュしたら `branch-practice origin` が先頭に来ると思います。 これでリモートリポジトリに一連の作業が反映されました。
 
 ![pushed](./markDownResource/pushed.png)
 
 * フェッチする
 
-リモートでの変更の履歴 (みんなのpush) を取得します。Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。あれれ、自動でフェッチしてくれるのかな？？？
+先程、 push することで、リモートリポジトリに自分が行った作業を反映させました。しかし、自分のローカルリポジトリは、自分以外のみんなが行った作業を知りません。そこで、フェッチをすることで、リモートでの変更の履歴 (みんなの作業情報) を取得します。Git Graph のタブの右上にある雲のアイコンをクリックしてフェッチしてください。 (もしかしたら push したときに自動でフェッチされてるかも)
 
 ![fetch](./markDownResource/fetch.png)
 

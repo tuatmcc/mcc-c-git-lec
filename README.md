@@ -109,6 +109,7 @@ checkout
 marge
 push
 pull
+stage
 fetch
 conflict
 gitignore
@@ -184,7 +185,7 @@ main ブランチでの branch-practice ディレクトリの中身を覚えて�
 
 ![beforecheckout](./markDownResource/beforecheckout.png)
 
-`branch-practice` にチェックアウトします。 `branch-practice` の部分をダブルクリックしてください。 (origin のとこはクリックしない。なんか色々出てくる。)
+`branch-practice` にチェックアウトします。 `branch-practice` の部分をダブルクリックしてください。 (※ origin のとこはクリックしない。なんか色々出てくる。)
 
 ![checkout4](./markDownResource/checkout4.png)
 
@@ -236,7 +237,7 @@ main ブランチでの branch-practice ディレクトリの中身を覚えて�
 
 * my-branch を作成する
 
-MCC の Discord の自分の名前の Branch を作ります。 `branch-practice origin` を右クリックし、 `Create Branch` を選択してください。
+MCC の Discord の自分の名前の Branch を作ります。 `branch-practice` を右クリックし、 `Create Branch` を選択してください。 (※ `branch-practice origin` を右クリックすると `Create Branch` が出てこない。ちょっと右の方のブランチ名の枠外 (赤い枠) あたりを右クリックすると出てくる。)
 
 ![create branch](./markDownResource/selectbranch.png)
 
@@ -254,7 +255,7 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![create branch](./markDownResource/createbranch4.png)
 
-先程作成した自分の名前のブランチには `origin` がついていません。これは、自分の名前のブランチはまだリモートに存在しないからです。ローカルブランチしか存在しません。
+先程作成した自分の名前のブランチには `origin` がついていません。これは、自分の名前のブランチはまだリモートに存在しないからです。 ローカルリポジトリにしかありません。`branch-practice` には `origin` がついています。これは、 `branch-practice` はリモートにも存在するからです。あとで自分の名前のブランチをリモートに反映させます。
 
 * コミットする
 
@@ -262,13 +263,13 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 ![create mytext](./markDownResource/createmytext.png)
 
-コミットをする前にステージします。ソースの管理から、 `自分の名前.txt` をカーソルを合わせると現れる + を押してステージしてください。
+`自分の名前.txt` を保存したら stage(ステージ) します。ソースの管理から、 `自分の名前.txt` をカーソルを合わせると現れる + を押してステージしてください。
 
-リポジトリ内のファイルを変更してコミットする際、コミットするファイルを選べます。選んだファイルがステージされ、ステージされたファイルのみコミットされます。特定のファイルだけ別のコミットにしたいときや、コミットしたくないファイルがあるときなどにこの機能は役立ちます。
+リポジトリ内のファイルを変更してコミットする際、ステージされたファイルのみコミットされます。特定のファイルだけ別のコミットにしたいときや、コミットしたくないファイルがあるときなどにこの機能は役立ちます。
 
 ![stage](./markDownResource/stage.png)
 
-ステージしたらメッセージを入力してください。ここではわかりやすく `commit 自分の名前` と入力してください。メッセージを入力したら Ctrl+Enter 、 (MacはたぶんCommand+Enter) もしくは `✓コミット` をクリックしてコミットできます。
+ステージしたらメッセージを入力してください。 ここではわかりやすく `commit 自分の名前` と入力してください。メッセージを入力したら Ctrl+Enter 、 (MacはたぶんCommand+Enter) もしくは `✓コミット` をクリックしてコミットできます。
 
 ![commit](./markDownResource/commit.png)
 
@@ -278,7 +279,7 @@ MCC の Discord の自分の名前の Branch を作ります。 `branch-practice
 
 * マージする
 
-`branch-practice` ブランチにチェックアウトしてください。自分の名前のブランチではアリません。
+`自分の名前のブランチ` を `branch-practice` にマージします。 `branch-practice` ブランチにチェックアウトしてください。チェックアウトしたら、今のブランチが `branch-practice` になっているか確認してください。
 
 ![margecheckout](./markDownResource/margecheckout.png)
 

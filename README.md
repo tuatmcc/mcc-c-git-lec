@@ -4,15 +4,93 @@
 
 ## Git の環境構築
 
+### Git のインストール
+
+説明の前に先にインストールします。 Windows と Mac でインストール方法が違うので、それぞれの OS でインストールしてください。 Linux の人は自力でやってください。
+
+* Windows
+
+[ここ](https://git-scm.com/download/win)をクリックしてダウンロードページを開いてください。
+
+開いたら `64-bit Git for Windows Setup.` をクリックしてインストーラーをダウンロードしてください。
+
+![gitdownload](./markDownResource/gitdownload.png)
+
+インストーラーを起動してください。基本的に設定はデフォルトのままで構いません。 Next を押していってください。
+
+![gitinstall](./markDownResource/gitinstall.png)
+
+* Mac
+
+ターミナルで `brew install git` を実行するとできるそうです(未検証)。担当の人が確認してくれます。
+
+### Github のアカウント作成
+
+アカウントを持ってない人は[ここ](https://github.com/)からアカウントを作成してください。たぶんみんな持ってるはず。
+
+### MCC の Organization に招待
+
+MCC の Organization に招待します。アカウント名を教えてください。担当者がやってくれます。たぶんみんな入ってるはず。
+
+### Git の設定
+
+* メアドの設定
+
+Git でコミットするときに使うメールアドレスを設定します。ここでは**実際のメアドを使いません**。 **Github のダミーメールアドレスを使います**。
+
+[github.com](https://github.com/) にアクセスし、右上の自分のアイコンをクリックしてください。
+
+![setting1](./markDownResource/setting1.png)
+
+Settings をクリックしてください。
+
+![setting2](./markDownResource/setting2.png)
+
+左の方にある Emails というところをクリックしてください。
+
+![email1](./markDownResource/email1.png)
+
+`Keep my email addresses private` をチェックしてください。 `We’ll remove your public profile email and use` の後にあるメールアドレスがダミーメールアドレスです(下の画像だと `96975428+sugawa197203@users.noreply.github.com` がダミーメールアドレス)。これをコピーしてください。
+
+![email2](./markDownResource/email2.png)
+
+ターミナルを開いてください。そして以下のコマンドを実行してください。 `メールアドレス` の部分は先ほどコピーしたダミーメールアドレスに置き換えてください。
+
+```bash
+git config --global user.email メールアドレス
+```
+
+これでメールアドレスの設定は完了です。
+
+* ユーザー名の設定
+
+Git でコミットするときに使うユーザー名を設定します。ここでは Github のユーザー名を使います。
+
+ターミナルを開いてください。そして以下のコマンドを実行してください。 `ユーザー名` の部分は Github のユーザー名に置き換えてください。
+
+```bash
+git config --global user.name ユーザー名
+```
+
+これでユーザー名の設定は完了です。
+
+### VScode の Git 拡張機能のインストール
+
 vscode の拡張昨日から検索欄に`git`と入れ、 Git Graph 、 Git History の2つをインストールしてください。
 
 ![git検索](./markDownResource/git1.png)
 
 インストールしている間に Git の概要を話したいと思います。
 
-## Git とは
+<br>
+<br>
 
-https://git-scm.com/download/win
+Git の環境構築は以上です！
+
+<br>
+<br>
+
+## Git とは
 
 Git とは、ソースコードなどの変更履歴を記録・追跡するための**バージョン管理システム**です。Git を使うことで、**誰が、いつ、どのような変更を行ったかを記録**することができます。
 
